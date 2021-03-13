@@ -35,6 +35,11 @@ function generatePassword(){
   var hasLower = confirm("Include lower case letters?");
   var hasNumbers = confirm("Include numbers?");
   var hasSpecial = confirm("Include special characters?");
+
+  if(!hasUpper&&!hasLower&&!hasNumbers&&!hasSpecial){
+    alert("You must at least choose 1 character type!");
+    return generatePassword()
+  }
 } 
 
 // Add event listener to generate button
