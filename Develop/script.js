@@ -40,6 +40,18 @@ function generatePassword(){
     alert("You must at least choose 1 character type!");
     return generatePassword()
   }
+  if(hasUpper){
+    chosenCharacters += upper;
+  }
+  if(hasLower){
+    choseCharacters += lower;
+  }
+  if(hasNumbers){
+    chosenCharacters += numbers;
+  }
+  if(hasSpecial){
+    chosenCharacters += special;
+  }
 } 
 
 // Add event listener to generate button
