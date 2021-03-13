@@ -26,6 +26,10 @@ function generatePassword(){
     alert("You must input a number!");
     return generatePassword();
   }
+  if(length<8 || length>128){
+    alert("Please choose a number between 8 to 128!");
+    return generatePassword();
+  }
 } 
 
 // Add event listener to generate button
