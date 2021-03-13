@@ -30,6 +30,11 @@ function generatePassword(){
     alert("Please choose a number between 8 to 128!");
     return generatePassword();
   }
+  // Ask the user if they want to include upper, lower, numbersand special characters
+  var hasUpper = confirm("Include upper case letters?");
+  var hasLower = confirm("Include lower case letters?");
+  var hasNumbers = confirm("Include numbers?");
+  var hasSpecial = confirm("Include special characters?");
 } 
 
 // Add event listener to generate button
