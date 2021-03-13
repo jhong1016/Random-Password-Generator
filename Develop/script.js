@@ -8,6 +8,10 @@ var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var special = ["!","@","#","$","%","^","&","*","(",")","[","]","{","}",",",".","<",">","?","|","-","_","=","+"];
 var chosenCharacters = "";
 
+// Empty array variables
+var resultArray = [];
+var userArray = [];
+
 // Generate password function gets called in writePassword function, and it should return the final password
 function generatePassword(){
   // Do random generation here and return the final password in the end
