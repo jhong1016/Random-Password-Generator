@@ -6,7 +6,6 @@ var upper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N
 var lower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o",  "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var special = ["!","@","#","$","%","^","&","*","(",")","[","]","{","}",",",".","<",">","?","|","-","_","=","+"];
-var chosenCharacters = "";
 
 // Empty array variables
 var resultArray = [];
@@ -32,27 +31,28 @@ function generatePassword(){
   var hasNumbers = confirm("Include numbers?");
   var hasSpecial = confirm("Include special characters?");
 
-  if(!hasUpper&&!hasLower&&!hasNumbers&&!hasSpecial){
+  if (!hasUpper&&!hasLower&&!hasNumbers&&!hasSpecial){
     alert("You must at least choose 1 character type!");
     return generatePassword();
   }
-  if(hasUpper){
-    chosenCharacters += upper;
+  if (hasUpper){
+    resultArray = resultArray.concat(upper);
   }
-  if(hasLower){
-    choseCharacters += lower;
+  if (hasLower){
+    resultArray = resultArray.concat(lower);
   }
-  if(hasNumbers){
-    chosenCharacters += numbers;
+  if (hasNumbers){
+    resultArray = resultArray.concat(numbers);
   }
-  if(hasSpecial){
-    chosenCharacters += special;
+  if (hasSpecial){
+    resultArray = resultArray.concat(special);
   }
+  console.log(resultArray);
 
-  for(var i = 0; i < length; i++) {
-    result += chosenCharacters.charAt(Math.floor(Math.random() * chosenCharacters.length));
+  for (var i = 0; i < length; i++) {
+    userArray.push (resultArray[Math.floor(Math.random() * resultArray.length)]);
   }
-  return result;
+  return userArray.join("");
 } 
 
 // Write password to the #password input
