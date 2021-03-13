@@ -1,4 +1,6 @@
-**Javascript: Password Generator**
+# Javascript: Password Generator
+
+**Description**
 
 The purpose of this assignment was to create a secure random password generator. This secure password generator functions by prompting the user for the following criteria:
 
