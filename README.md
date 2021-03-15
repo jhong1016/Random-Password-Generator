@@ -14,7 +14,7 @@ Once the program has verified that the password length meets the minimum and max
 
 **Screenshot**
 
-![Screenshot](https://github.com/jhong1016/Random-Password-Generator/blob/main/Develop/Screenshot.JPG)
+![Screenshot](https://github.com/jhong1016/Random-Password-Generator/blob/main/Screenshot.JPG)
 
 **Link to Deployed Application**
 
