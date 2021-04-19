@@ -21,3 +21,11 @@ Once the program has verified that the password length meets the minimum and max
 **Link to Deployed Application**
 
 https://jhong1016.github.io/Random-Password-Generator/
+
+**Technologies Used**
+
+HTML / CSS / JAVASCRIPT
+
+**License**
+
+USYD Coding Bootcamp
